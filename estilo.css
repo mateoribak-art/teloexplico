@@ -1,0 +1,22 @@
+:root { --papel: #FFF6E5; --cuadricula: #F0E3C8; --tinta: #111; --azul: #2E4BFF; --amarillo: #FFE14D; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--tinta); font: 17px/1.55 "Bricolage Grotesque", system-ui, sans-serif;
+  background-color: var(--papel);
+  background-image: linear-gradient(var(--cuadricula) 1px, transparent 1px), linear-gradient(90deg, var(--cuadricula) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+h1 { font-weight: 800; font-size: clamp(40px, 9vw, 72px); letter-spacing: -2px; margin: 0 0 12px; line-height: 1; }
+.legal h1 { font-size: clamp(32px, 6vw, 44px); }
+h2 { font-weight: 800; font-size: 22px; margin: 32px 0 8px; }
+.bajada { font-size: 20px; background: linear-gradient(transparent 55%, var(--amarillo) 55%); display: inline; }
+.fecha { color: #555; }
+a { color: var(--azul); }
+.redes { display: flex; flex-direction: column; gap: 12px; margin: 36px 0; }
+.redes a {
+  display: block; background: #fff; color: var(--tinta); text-decoration: none; font-weight: 800;
+  border: 3px solid var(--tinta); border-radius: 14px; box-shadow: 5px 5px 0 var(--tinta); padding: 14px 18px;
+}
+section p, .legal p, .legal li { max-width: 65ch; }
+footer { margin-top: 48px; font-size: 15px; color: #444; }
